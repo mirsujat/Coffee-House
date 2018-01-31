@@ -1,2 +1,2 @@
 # Build-Config
-Build Config for Webpack, Grunt, Gulp, Brwserify
+Build Config for Webpack, Grunt, Gulp, Browserify
