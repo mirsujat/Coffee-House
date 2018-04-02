@@ -6,7 +6,6 @@ Change your build directory for your project since that is where most of the pat
 In your root build.gradle file
 
 ```
-
     allprojects {
 
      buildDir = "C:/tmp/${rootProject.name}/${project.name}"
@@ -28,8 +27,7 @@ Failed to crunch file means studio can't process the file. Its too long and it h
 
 Better way is to change the build directory of the project in the build.gradle file (Project)
 
-[
-
+```
     allprojects {
 
         buildDir = "C:/tmp/${rootProject.name}/${project.name}"
@@ -41,7 +39,7 @@ Better way is to change the build directory of the project in the build.gradle f
         }
     }
     
-]
+```
 
 
 
