@@ -5,19 +5,20 @@ or npm run android -  Error: File path too long on Windows, keep below 240 chara
 Change your build directory for your project since that is where most of the path issues will arise. 
 In your root build.gradle file
 
+[
 
-allprojects {
+    allprojects {
 
-    buildDir = "C:/tmp/${rootProject.name}/${project.name}"
+     buildDir = "C:/tmp/${rootProject.name}/${project.name}"
     
-    repositories {
+     repositories {
     
-       ...
+         ...
        
-    }   
-}
+        }   
+    }
 
-
+]
 
 
 #### Issue 2: Failed to crunch file - Android studio (app:mergeDebugResources)
