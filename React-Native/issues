@@ -1,0 +1,13 @@
+react-native run-android - Error: File path too long on Windows, keep below 240 characters
+or npm run android -  Error: File path too long on Windows, keep below 240 characters
+
+## solution: 
+Change your build directory for your project since that is where most of the path issues will arise. 
+In your root build.gradle file
+
+allprojects {
+    buildDir = "C:/tmp/${rootProject.name}/${project.name}"
+    repositories {
+       ...
+    }
+}
