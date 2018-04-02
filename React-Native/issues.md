@@ -28,17 +28,20 @@ Failed to crunch file means studio can't process the file. Its too long and it h
 
 Better way is to change the build directory of the project in the build.gradle file (Project)
 
+[
 
-allprojects {
+    allprojects {
 
-    buildDir = "C:/tmp/${rootProject.name}/${project.name}"
+        buildDir = "C:/tmp/${rootProject.name}/${project.name}"
     
-    repositories {
+        repositories {
     
-       ...
+        ...
        
+        }
     }
-}
+    
+]
 
 
 
