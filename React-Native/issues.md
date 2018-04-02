@@ -7,6 +7,7 @@ In your root build.gradle file
 
 
 allprojects {
+
     buildDir = "C:/tmp/${rootProject.name}/${project.name}"
     
     repositories {
@@ -25,6 +26,7 @@ Better way is to change the build directory of the project in the build.gradle f
 
 
 allprojects {
+
     buildDir = "C:/tmp/${rootProject.name}/${project.name}"
     
     repositories {
