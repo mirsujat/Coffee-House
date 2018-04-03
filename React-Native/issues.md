@@ -39,9 +39,13 @@ Better way is to change the build directory of the project in the build.gradle f
     }
 ```
 
-* Issue 3:failed to find target with hash string 'android-26'
+* Issue 3: failed to find target with hash string 'android-26'
+
+#### workaround: 
 
 ```
+add the following code in your root build.gradle and ## not the app/build.gradle.
+
 subprojects {
     ext {
         compileSdk = 25
