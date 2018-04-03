@@ -1,4 +1,4 @@
-* Issue 1: react-native run-android - Error: File path too long on Windows, keep below 240 characters
+#### Issue 1: react-native run-android - Error: File path too long on Windows, keep below 240 characters
   or npm run android - Error: File path too long on Windows, keep below 240 characters
 
 #### solution:
@@ -19,7 +19,7 @@ In your root build.gradle file
     }
 ```
 
-* Issue 2: Failed to crunch file - Android studio (app:mergeDebugResources)
+#### Issue 2: Failed to crunch file - Android studio (app:mergeDebugResources)
   Failed to crunch file means studio can't process the file. Its too long and it has reached the max file path line of the operating system.
 
 #### Solution:
@@ -39,7 +39,7 @@ Better way is to change the build directory of the project in the build.gradle f
     }
 ```
 
-* Issue 3: failed to find target with hash string 'android-26'
+#### Issue 3: failed to find target with hash string 'android-26'
 
 #### workaround: 
 
