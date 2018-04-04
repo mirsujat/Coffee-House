@@ -45,3 +45,13 @@ subprojects { subproject ->
     }
 }
 ```
+
+And in your app/build.gradle, replace:
+
+```
+...
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+...
+```
