@@ -94,7 +94,8 @@ module.exports = {
 
 ### or
 
-* Good Way
+* Good Way  
+
 I added this to package.json using RN v0.52
 
 ```
