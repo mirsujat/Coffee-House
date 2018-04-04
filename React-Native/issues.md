@@ -3,7 +3,7 @@
 * 1.  react-native run-android - Error: File path too long on Windows
 * 2.  Failed to crunch file - Android studio (app:mergeDebugResources)
 * 3.  failed to find target with hash string 'android-26'
-* 4.  the module `Ionicons` could not be found within the package 
+* 4.  the module `Ionicons` could not be found within the package
 
 #### Issue 1: react-native run-android - Error: File path too long on Windows, keep below 240 characters or npm run android - Error: File path too long on Windows, keep below 240 characters
 
@@ -94,7 +94,7 @@ module.exports = {
 
 ### or
 
-* Good Way  
+* Good Way
 
 I added this to package.json using RN v0.52
 
@@ -103,3 +103,12 @@ I added this to package.json using RN v0.52
     "postinstall": "rm ./node_modules/react-native/local-cli/core/__fixtures__/files/package.json”
 }
 ```
+
+### Issue 5: Update Android dependencies
+
+Fixes #12929 by using newer versions of Android dependencies:
+
+* Updated Android SDK 23 to 25
+* Updated Build Tools from 23.0.1 to 25.0.2
+* Updated compileSdkVersion and targetSdkVersion to 25
+* Updated AppCompat from 23.0.1 to 25.2.0
