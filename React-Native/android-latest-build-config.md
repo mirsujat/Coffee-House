@@ -1,4 +1,4 @@
-* In your root build.gradle, update the Gradle plugin so that it uses Gradle 3+:
+* 1: In your root build.gradle, update the Gradle plugin so that it uses Gradle 3+:
 
 ```...
 dependencies {
@@ -6,7 +6,7 @@ dependencies {
 ...
 ```
 
-* Then, in your app/build.gradle, update the build tools to the latest (25), because it's mandatory to support Gradle 3+:
+* 2: Then, in your app/build.gradle, update the build tools to the latest (25), because it's mandatory to support Gradle 3+:
 
 ```...
 android {
