@@ -55,3 +55,5 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
 ...
 ```
+
+Congratulations, you can now enjoy Gradle 3 build against the latest version of Android build-tools, thus boosting your compilation time.
