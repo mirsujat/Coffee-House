@@ -94,9 +94,8 @@ module.exports = {
 
 ### or
 
-I added this to package.json using RN v0.52
-
 * Good Way
+I added this to package.json using RN v0.52
 
 ```
 "scripts": {
