@@ -78,6 +78,8 @@ error: bundling failed: Error: While resolving module `react-native-vector-icons
 
 ### workaround
 
+* Best way
+
 ```
 place this line of code in rn-cli-config.js in your root rpoject folder
 
@@ -92,6 +94,8 @@ module.exports = {
 ### or
 
 I added this to package.json using RN v0.52
+
+* Good Way
 
 ```
 "scripts": {
