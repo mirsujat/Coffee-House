@@ -71,3 +71,15 @@ subprojects {
 Also if anyone read this, if you implement the workaround make sure you put the "workaround" in your root build.gradle and not the app/build.gradle. This does make THIS library work.
 
 ## [Unfortunately, broke some other stuff though.]
+
+### Issue 4:
+
+error: bundling failed: Error: While resolving module `react-native-vector-icons/Ionicons`, the Haste package `react-native-vector-icons` was found. However the module `Ionicons` could not be found within the package
+
+I added this to package.json using RN v0.52
+
+```
+"scripts": {
+    "postinstall": "rm ./node_modules/react-native/local-cli/core/__fixtures__/files/package.json”
+}
+```
