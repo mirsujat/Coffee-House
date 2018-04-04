@@ -76,6 +76,21 @@ Also if anyone read this, if you implement the workaround make sure you put the 
 
 error: bundling failed: Error: While resolving module `react-native-vector-icons/Ionicons`, the Haste package `react-native-vector-icons` was found. However the module `Ionicons` could not be found within the package
 
+### workaround
+
+```
+place this line of code in rn-cli-config.js in your root rpoject folder
+
+const blacklist = require('metro/src/blacklist');
+module.exports = {
+  getBlacklistRE() {
+    return blacklist([/react-native\/local-cli\/core\/__fixtures__.*/]);
+  }
+};
+```
+
+### or
+
 I added this to package.json using RN v0.52
 
 ```
