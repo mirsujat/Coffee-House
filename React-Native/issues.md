@@ -46,10 +46,10 @@ add the following code in your root build.gradle and ## not the app/build.gradle
 
 subprojects {
     ext {
-        compileSdk = 25
-        buildTools = "25.0.1"
-        minSdk = 19
-        targetSdk = 25
+        compileSdk = 23
+        buildTools = "23.0.1"
+        minSdk = 16
+        targetSdk = 22
     }
 
     afterEvaluate { project ->
