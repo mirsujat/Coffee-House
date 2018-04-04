@@ -22,3 +22,26 @@ android {
 ```
 distributionUrl=https\://services.gradle.org/distributions/gradle-3.5-bin.zip
 ```
+
+-4 : [Issue] error: The SDK Build Tools revision (23.0.1) is too low for project ':react-native-vector-icons'. Minimum required is 25.0.0
+
+#### Workaround:
+
+overwrite the build tools version of your dependencies To do so, copy and paste in your root build.gradle:
+
+```
+ext {
+    compileSdkVersion = 23
+    buildToolsVersion = '25.0.2'
+}
+subprojects { subproject ->
+    afterEvaluate{
+        if((subproject.plugins.hasPlugin('android') || subproject.plugins.hasPlugin('android-library'))) {
+            android {
+                compileSdkVersion rootProject.ext.compileSdkVersion
+                buildToolsVersion rootProject.ext.buildToolsVersion
+            }
+        }
+    }
+}
+```
