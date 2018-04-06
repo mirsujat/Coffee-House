@@ -14,6 +14,7 @@ android {
 
 /**
 *Defining dependencies and keeping the version external
+*A good practice is to define the version of your library dependencies outside the dependencies closure for better maintenance.
 */
 
 ext {
