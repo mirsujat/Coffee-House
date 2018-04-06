@@ -4,6 +4,8 @@ android {
     buildTypes {
         release {
             minifyEnabled true
+			//Removing unused resources and Java classes via resource shrinking
+			//To enable resource shrinking. shrinkResources true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
