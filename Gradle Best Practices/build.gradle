@@ -15,6 +15,7 @@ android {
 /**
 *Defining dependencies and keeping the version external
 *A good practice is to define the version of your library dependencies outside the dependencies closure for better maintenance.
+*If you put the ext closure into the root build file, you can access its properties for example with '$rootProject.ext.junitVersion'.
 */
 
 ext {
