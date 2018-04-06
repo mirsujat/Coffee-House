@@ -1,1 +1,22 @@
-Defining product flavors in your Gradle build file
+Rename the output apk
+
+apply plugin: 'com.android.application'
+
+android {
+    // more
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+       applicationVariants.all { variant ->
+           variant.outputs.each { output ->
+               def file = output.outputFile
+               def filename = file.name.replace("app", "lars")
+               output.outputFile = new File(file.parent, filename)
+
+           }
+       }
+// more
+}
+
