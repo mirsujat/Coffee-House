@@ -1,26 +1,5 @@
 
-/**
-*Defining dependencies and keeping the version external
-*A good practice is to define the version of your library dependencies outside the dependencies closure for better maintenance.
-*If you put the ext closure into the root build file, you can access its properties for example with '$rootProject.ext.junitVersion'.
-*/
 
-ext {
-    // App dependencies
-    junitVersion = '4.12'
-    mockitoVersion = '1.10.19'
-    powerMockito = '1.6.2'
-    hamcrestVersion = '1.3'
-}
-
-dependencies {
-    // Dependencies for local unit tests
-    testCompile "junit:junit:$junitVersion"
-    testCompile "org.mockito:mockito-all:$mockitoVersion"
-    testCompile "org.hamcrest:hamcrest-all:$hamcrestVersion"
-    testCompile "org.powermock:powermock-module-junit4:$powerMockito"
-    testCompile "org.powermock:powermock-api-mockito:$ext.powerMockito"
-}
 
 //Module level Build Gradle
 
@@ -171,3 +150,26 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
 
+
+/**
+*Defining dependencies and keeping the version external
+*A good practice is to define the version of your library dependencies outside the dependencies closure for better maintenance.
+*If you put the ext closure into the root build file, you can access its properties for example with '$rootProject.ext.junitVersion'.
+*/
+
+ext {
+    // App dependencies
+    junitVersion = '4.12'
+    mockitoVersion = '1.10.19'
+    powerMockito = '1.6.2'
+    hamcrestVersion = '1.3'
+}
+
+dependencies {
+    // Dependencies for local unit tests
+    testCompile "junit:junit:$junitVersion"
+    testCompile "org.mockito:mockito-all:$mockitoVersion"
+    testCompile "org.hamcrest:hamcrest-all:$hamcrestVersion"
+    testCompile "org.powermock:powermock-module-junit4:$powerMockito"
+    testCompile "org.powermock:powermock-api-mockito:$ext.powerMockito"
+}
