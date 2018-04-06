@@ -118,6 +118,9 @@ android {
 
     release {
         minifyEnabled true // Enables code shrinking for the release build type.
+		//Removing unused resources and Java classes via resource shrinking
+		//To enable resource shrinking. shrinkResources true
+        shrinkResources true
         proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
     }
   }
