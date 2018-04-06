@@ -102,16 +102,19 @@ android {
    * and assign each flavor to a flavor dimension. To learn more, read the
    * migration guide.
    */
+	
+	//Defining product flavors in your Gradle build file
+	productFlavors {
+		prod {
+        applicationId = "com.vogella.android.gradlebuildflavors.prod"
+        versionName = "1.0-paid"
+		}
 
-  productFlavors {
-    free {
-      applicationId 'com.example.myapp.free'
-    }
-
-    paid {
-      applicationId 'com.example.myapp.paid'
-    }
-  }
+		mock {
+        applicationId = "com.vogella.android.gradlebuildflavors.mock"
+        versionName = "1.0-free"
+		}
+	}
 
   /**
    * The splits block is where you can configure different APK builds that
