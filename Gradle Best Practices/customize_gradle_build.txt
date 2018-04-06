@@ -1,4 +1,4 @@
-Rename the output apk
+- Rename the output apk
 
 apply plugin: 'com.android.application'
 
@@ -20,3 +20,5 @@ android {
 // more
 }
 
+
+- Specify a different keystore for your debug build
