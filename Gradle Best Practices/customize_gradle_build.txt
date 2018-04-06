@@ -34,3 +34,6 @@ android {
     }
 }
 ```
+
+- Adding a Gradle file for your Eclipse based Android project
+
