@@ -135,4 +135,5 @@ The androidTestImplementation dependency refers to the Espresso testing library,
 
 Finally, there are three lines that add dependencies to the implementation configuration:
 
+* The first, fileTree(dir: 'libs', include: ['*.jar']), is a fileTree dependency that adds any jar files in the libs folder to the compile classpath
 
