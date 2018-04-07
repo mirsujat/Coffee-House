@@ -81,4 +81,22 @@ apply plugin: 'com.android.application'
 
 This "applies" the Android plugin (referred to in the buildscript section of the top-level build file) to the current project. Plugins in Gradle can add custom tasks, new configurations, dependencies, and other capabilities to Gradle projects. In this case, applying the Android plugin adds a wide variety of tasks, which are configured by the android block shown next.
 
-
+```
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "org.gradle.helloworldgradle"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+```
