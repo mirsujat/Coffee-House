@@ -149,4 +149,8 @@ $ ./gradlew build
 
 This will run many tasks and eventually return "Build Successful". To see the resulting APK (Android package, the deployable version of an Android app), look in the directory app/build/outputs/apk. There you will find a debug and a release directories. The debug directory contains app-debug.apk, which is the APK version that will be deployed to an emulator or connected device. If you want to deploy a release APK, you need to create a signing configuration first, which is beyond the scope of this guide, but is a straightforward process described in the resources.
 
+From the terminal, you can also find out the version of the support-annotations module being used in the project. To do so, first run the dependencies task in the app project, asking for the details of the releaseCompileClasspath configuration only.
+
+
+
 
