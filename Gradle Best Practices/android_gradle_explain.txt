@@ -111,3 +111,5 @@ These properties are more relevant to Android than the Gradle build system, to t
 * The versionName value is used for your own internal version tracking.
 * The testInstrumentationRunner property is configured to use the JUnit 4 test runner configured for Android apps.
 
+Below this section is a block called buildTypes. By default, Android apps support two build types, debug and release. This section allows you to configure each however you like. The debug section is not shown here, implying that all the default settings for debug are being used.
+
