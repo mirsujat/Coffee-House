@@ -106,3 +106,4 @@ These properties are more relevant to Android than the Gradle build system, to t
 * The compileSdkVersion is associated with the Android SDK and should always be the latest available version.
 * The defaultConfig section hold properties that are shared by all variants (combinations of build types and product flavors) of the app.
 * The applicationId is based on the domain name and project name specified when creating the app, and must be unique in the Google Play store.
+* The value of minSdkVersion is the minimum Android API you are willing to support with this app, and the targetSdkVersion should be the latest Android version available.
