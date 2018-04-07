@@ -69,3 +69,6 @@ When Gradle builds this project the first time, the plugin will be downloaded an
 
 The allprojects tag holds configuration details that apply to both the top-level project and any sub-projects it contains. In this case, the block specifies that any required dependencies should be downloaded from google, or jcenter, the public Bintray Artifactory repository at https://jcenter.bintray.com.
 
+Finally, the build file contains a custom (or ad hoc) task, called clean. It uses the built-in task type Delete and configures it so that the clean task will delete the buildDir in the rootProject. Both are project properties, whose values default to the build directory in the project where this app resides.
+
+
