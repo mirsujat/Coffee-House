@@ -133,3 +133,6 @@ Taking the simplest one first, the testImplementation dependency consists only o
 The androidTestImplementation dependency refers to the Espresso testing library, which is used for integration testing of Android apps. In this case, Espresso is requested without the support-annotations library that it would normally include, because a different version is already included through other dependencies. In a later step, you’ll see how to find out what version of this library was included and why.
 
 
+Finally, there are three lines that add dependencies to the implementation configuration:
+
+
