@@ -31,12 +31,12 @@ The project build.gradle file should have contents similar to:
 ```
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
-buildscript {                 
+buildscript {    // 1             
     repositories {
         google()
         jcenter()
     }
-    dependencies {            
+    dependencies {  // 2          
         classpath 'com.android.tools.build:gradle:3.0.1'
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -44,14 +44,19 @@ buildscript {
     }
 }
 
-allprojects {                 
+allprojects {  // 3               
     repositories {
         google()
         jcenter()
     }
 }
 
-task clean(type: Delete) {    
+task clean(type: Delete) {  // 4  
     delete rootProject.buildDir
 }
 ```
+
+- 1: Download plugins block
+- 2: Identifies the Android plugin
+- 3: Configuration for top-level and module projects
+- 4: Ad hoc task
