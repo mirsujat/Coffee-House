@@ -128,3 +128,4 @@ dependencies {
 
 Configuring dependencies is a fundamental part of building Gradle applications. In this case, the dependencies section shows values for the implementation, testImplementation, and androidTestImplementation configurations.
 
+Taking the simplest one first, the testImplementation dependency consists only of the latest stable JUnit 4 distribution. The JUnit classes and test annotations will then be available at compile time in the src/test/java hierarchy.
