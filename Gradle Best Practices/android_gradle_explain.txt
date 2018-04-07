@@ -143,3 +143,10 @@ Run standard Gradle tasks
 
 Android Studio makes it easy to build and deploy a debug version of an app through the IDE, but ultimately Gradle is still involved. To see this, open the Terminal window in Android Studio (or open an external command prompt and navigate to the root directory of your app). From there you can run the build task.
 
+```
+$ ./gradlew build
+```
+
+This will run many tasks and eventually return "Build Successful". To see the resulting APK (Android package, the deployable version of an Android app), look in the directory app/build/outputs/apk. There you will find a debug and a release directories. The debug directory contains app-debug.apk, which is the APK version that will be deployed to an emulator or connected device. If you want to deploy a release APK, you need to create a signing configuration first, which is beyond the scope of this guide, but is a straightforward process described in the resources.
+
+
