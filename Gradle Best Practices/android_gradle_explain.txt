@@ -23,3 +23,8 @@ The first four lines indicate that when the wrapper runs the first time, it will
 The last line shows the value of the distributionUrl, which is the location where Gradle will download the distribution specified.
 
 [ The specific version number might differ from that shown here (4.1), and the URL might refer to a binary version (-bin) instead of the complete (-all) version shown in this example. ]
+
+- Review the top-level Gradle build file
+
+The project build.gradle file should have contents similar to:
+
