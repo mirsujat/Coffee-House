@@ -78,3 +78,7 @@ Open the build.gradle file in the app module. The first line is:
 ```
 apply plugin: 'com.android.application'
 ```
+
+This "applies" the Android plugin (referred to in the buildscript section of the top-level build file) to the current project. Plugins in Gradle can add custom tasks, new configurations, dependencies, and other capabilities to Gradle projects. In this case, applying the Android plugin adds a wide variety of tasks, which are configured by the android block shown next.
+
+
