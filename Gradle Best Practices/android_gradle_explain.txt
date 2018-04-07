@@ -64,3 +64,8 @@ task clean(type: Delete) {  // 4
 Gradle defines a domain-specific language (DSL) for builds, used inside the build files. The buildscript tag is part of that DSL. It tells Gradle that the build requires a plugin that may not be part of the baseline Gradle distribution, and tells Gradle where to find it. In this case, the required plugin is specified using coordinate syntax "group:name:version", where the group is com.android.tools.build, the name is gradle, and the version is 3.0.1.
 
 [ The version number of the Gradle plugin is updated frequently. Please use the latest plugin, as it will contain all the available bug fixes and performance improvements. ]
+
+When Gradle builds this project the first time, the plugin will be downloaded and cached, so this task is only performed once.
+
+The allprojects tag holds configuration details that apply to both the top-level project and any sub-projects it contains. In this case, the block specifies that any required dependencies should be downloaded from google, or jcenter, the public Bintray Artifactory repository at https://jcenter.bintray.com.
+
