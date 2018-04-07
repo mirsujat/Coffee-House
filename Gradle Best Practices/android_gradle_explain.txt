@@ -242,6 +242,9 @@ Use the Gradle window
 
 Android Studio includes a special window for executing Gradle tasks. Android projects provide over 80 different tasks, and this window tries to organize them into categories.
 
+* Open the Tasks folder under :app, and look inside the android category. The following figure shows an example.
+* Since the signingReport task does not require any arguments, you can simply double-click on it to execute it. The results are shown in the next figure.
+* The signingReport task tells you where the public key is stored (here the debug.keystore file in the user’s root directory), its alias, and its MD5 and SHA1 hashes.
 
 
 
