@@ -194,6 +194,12 @@ releaseCompileClasspath - Resolved configuration for compilation for variant: re
 
 
 BUILD SUCCESSFUL
+
+From the output, you can see that the support-annotations module, version 26.1.0, is a dependency of the appcompat-v7 library.
+
+Another way to see the version required is to use the dependencyInsight task. Run the following command (all on one line).
+
+
 ```
 
 
