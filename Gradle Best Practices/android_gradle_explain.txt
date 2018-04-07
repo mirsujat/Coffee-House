@@ -109,4 +109,5 @@ These properties are more relevant to Android than the Gradle build system, to t
 * The value of minSdkVersion is the minimum Android API you are willing to support with this app, and the targetSdkVersion should be the latest Android version available.
 * The value of versionCode should be an integer that is incremented before uploading a new version of the app into the Google Play store. This value, along with the applicationId, tell Google that this is a new version of an existing app, as opposed to a new app.
 * The versionName value is used for your own internal version tracking.
+* The testInstrumentationRunner property is configured to use the JUnit 4 test runner configured for Android apps.
 
