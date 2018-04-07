@@ -286,3 +286,37 @@ Gradle Cloud Services license agreement accepted.
 Publishing build scan...
 https://gradle.com/s/carzirlfjwjlo
 ```
+
+The resulting page will resemble:
+
+Feel free to explore all the details. The report contains information on many features, including dependencies. If you dig into the dependencies section and open the releaseCompileClasspath configuration of the :app subproject, inside the appcompat-v7 library is the support-annotations library described earlier.
+
+Build scans are a powerful way to analyze your build. For more details, see the Getting Started guide for Creating Build Scans and the Build Scan Plugin User Manual
+
+#### Summary
+
+In this guide, you created an Android app and examined many of the Gradle capabilities that came with it. Specifically, you learned how to:
+
+* Create an Android app using Android Studio
+
+* View the generated project as a Gradle multi-project build
+
+* Add the Android plugin to the top-level Gradle build file
+
+* See which version of Gradle is used in the generated wrapper
+
+* Interpret the settings added in the android section of the app
+
+* Work with the default dependencies added to the app
+
+* Build the app and see the output APK
+
+* Determine which version of a dependency is being used
+
+* Use the Gradle window to execute tasks
+
+* Deploy and uninstall the app on multiple devices
+
+* Run a build scan on an Android project
+
+Next Steps
