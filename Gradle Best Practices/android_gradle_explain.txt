@@ -2,7 +2,7 @@ Android projects are Gradle multi-project builds, with a top-level build.gradle 
 
 There may be two files called gradle.properties. One is local to the project. The other, optional file of the same name exists only if you have a global gradle.properties file in the .gradle sub-directory of your home directory.
 
--The file settings.gradle is used by Gradle to configure the multi-project build. It should consist of a single line:
+### The file settings.gradle is used by Gradle to configure the multi-project build. It should consist of a single line:
 ```
 include ':app'
 ```
@@ -24,7 +24,7 @@ The last line shows the value of the distributionUrl, which is the location wher
 
 [ The specific version number might differ from that shown here (4.1), and the URL might refer to a binary version (-bin) instead of the complete (-all) version shown in this example. ]
 
-- Review the top-level Gradle build file
+### Review the top-level Gradle build file
 
 The project build.gradle file should have contents similar to:
 
@@ -71,4 +71,4 @@ The allprojects tag holds configuration details that apply to both the top-level
 
 Finally, the build file contains a custom (or ad hoc) task, called clean. It uses the built-in task type Delete and configures it so that the clean task will delete the buildDir in the rootProject. Both are project properties, whose values default to the build directory in the project where this app resides.
 
-
+### Review the build file in the app module
