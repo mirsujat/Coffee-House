@@ -60,3 +60,7 @@ task clean(type: Delete) {  // 4
 - 2: Identifies the Android plugin
 - 3: Configuration for top-level and module projects
 - 4: Ad hoc task
+
+Gradle defines a domain-specific language (DSL) for builds, used inside the build files. The buildscript tag is part of that DSL. It tells Gradle that the build requires a plugin that may not be part of the baseline Gradle distribution, and tells Gradle where to find it. In this case, the required plugin is specified using coordinate syntax "group:name:version", where the group is com.android.tools.build, the name is gradle, and the version is 3.0.1.
+
+
