@@ -125,3 +125,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 }
 ```
+
+Configuring dependencies is a fundamental part of building Gradle applications. In this case, the dependencies section shows values for the implementation, testImplementation, and androidTestImplementation configurations.
+
