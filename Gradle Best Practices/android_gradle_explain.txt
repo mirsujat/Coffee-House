@@ -129,3 +129,7 @@ dependencies {
 Configuring dependencies is a fundamental part of building Gradle applications. In this case, the dependencies section shows values for the implementation, testImplementation, and androidTestImplementation configurations.
 
 Taking the simplest one first, the testImplementation dependency consists only of the latest stable JUnit 4 distribution. The JUnit classes and test annotations will then be available at compile time in the src/test/java hierarchy.
+
+The androidTestImplementation dependency refers to the Espresso testing library, which is used for integration testing of Android apps. In this case, Espresso is requested without the support-annotations library that it would normally include, because a different version is already included through other dependencies. In a later step, you’ll see how to find out what version of this library was included and why.
+
+
