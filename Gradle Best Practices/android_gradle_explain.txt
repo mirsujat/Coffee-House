@@ -136,4 +136,4 @@ The androidTestImplementation dependency refers to the Espresso testing library,
 Finally, there are three lines that add dependencies to the implementation configuration:
 
 * The first, fileTree(dir: 'libs', include: ['*.jar']), is a fileTree dependency that adds any jar files in the libs folder to the compile classpath
-
+* The second, com.android.support:appcompat-v7:26.1.0 adds the Android Compatibility library to the project. This allows you to use the Material design theme and other capabilities in any Android app as old as SDK version 7.
