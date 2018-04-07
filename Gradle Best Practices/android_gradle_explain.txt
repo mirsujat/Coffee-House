@@ -259,3 +259,8 @@ $ ./gradlew installDebug
 This is different from running the app through the IDE. In that case, you would select a single connected device or emulator, and would both install the app and start it up. The installDebug task from Gradle will deploy the app in all connected devices in one step, though it will not start the app in any of them. The result will be similar to the next figure.
 
 
+You can launch the app by double-clicking on the icon, as usual. You can also remove the app by using the uninstallAll task.
+
+```
+$ ./gradlew uninstallAll
+```
