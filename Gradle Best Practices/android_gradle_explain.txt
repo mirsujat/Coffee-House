@@ -72,3 +72,9 @@ The allprojects tag holds configuration details that apply to both the top-level
 Finally, the build file contains a custom (or ad hoc) task, called clean. It uses the built-in task type Delete and configures it so that the clean task will delete the buildDir in the rootProject. Both are project properties, whose values default to the build directory in the project where this app resides.
 
 ### Review the build file in the app module
+
+Open the build.gradle file in the app module. The first line is:
+
+```
+apply plugin: 'com.android.application'
+```
