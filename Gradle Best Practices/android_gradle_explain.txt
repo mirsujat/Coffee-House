@@ -20,3 +20,5 @@ distributionUrl=https\://services.gradle.org/distributions/gradle-4.1-all.zip
 
 The first four lines indicate that when the wrapper runs the first time, it will download a Gradle distribution and store it in the directory .gradle/wrapper/dists in your home directory.
 
+The last line shows the value of the distributionUrl, which is the location where Gradle will download the distribution specified.
+
