@@ -199,7 +199,40 @@ From the output, you can see that the support-annotations module, version 26.1.0
 
 Another way to see the version required is to use the dependencyInsight task. Run the following command (all on one line).
 
+```
+$ ./gradlew :app:dependencyInsight --dependency support-annotations --configuration releaseCompileClasspath
+:app:dependencyInsight
+com.android.support:support-annotations:26.1.0
++--- com.android.support:appcompat-v7:26.1.0
+|    \--- releaseCompileClasspath
++--- com.android.support:support-compat:26.1.0
+|    +--- com.android.support:support-vector-drawable:26.1.0
+|    |    +--- com.android.support:appcompat-v7:26.1.0 (*)
+|    |    \--- com.android.support:animated-vector-drawable:26.1.0
+|    |         \--- com.android.support:appcompat-v7:26.1.0 (*)
+|    +--- com.android.support:support-v4:26.1.0
+|    |    \--- com.android.support:appcompat-v7:26.1.0 (*)
+|    +--- com.android.support:support-media-compat:26.1.0
+|    |    \--- com.android.support:support-v4:26.1.0 (*)
+|    +--- com.android.support:support-fragment:26.1.0
+|    |    \--- com.android.support:support-v4:26.1.0 (*)
+|    +--- com.android.support:support-core-utils:26.1.0
+|    |    +--- com.android.support:support-v4:26.1.0 (*)
+|    |    \--- com.android.support:support-fragment:26.1.0 (*)
+|    \--- com.android.support:support-core-ui:26.1.0
+|         +--- com.android.support:animated-vector-drawable:26.1.0 (*)
+|         +--- com.android.support:support-v4:26.1.0 (*)
+|         \--- com.android.support:support-fragment:26.1.0 (*)
++--- com.android.support:support-core-ui:26.1.0 (*)
++--- com.android.support:support-core-utils:26.1.0 (*)
++--- com.android.support:support-media-compat:26.1.0 (*)
+\--- com.android.support:support-vector-drawable:26.1.0 (*)
 
+(*) - dependencies omitted (listed previously)
+
+
+BUILD SUCCESSFUL
+```
 ```
 
 
