@@ -319,4 +319,4 @@ In this guide, you created an Android app and examined many of the Gradle capabi
 
 * Run a build scan on an Android project
 
-Next Steps
+## The End
