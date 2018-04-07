@@ -113,3 +113,6 @@ These properties are more relevant to Android than the Gradle build system, to t
 
 Below this section is a block called buildTypes. By default, Android apps support two build types, debug and release. This section allows you to configure each however you like. The debug section is not shown here, implying that all the default settings for debug are being used.
 
+After the android block, there is a block that shows the libraries used for this app.
+
+
