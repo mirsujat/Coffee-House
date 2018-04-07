@@ -100,3 +100,6 @@ android {
     }
 }
 ```
+
+These properties are more relevant to Android than the Gradle build system, to they will only be lightly reviewed here. In short:
+
