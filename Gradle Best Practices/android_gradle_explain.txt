@@ -104,3 +104,4 @@ android {
 These properties are more relevant to Android than the Gradle build system, to they will only be lightly reviewed here. In short:
 
 * The compileSdkVersion is associated with the Android SDK and should always be the latest available version.
+* The defaultConfig section hold properties that are shared by all variants (combinations of build types and product flavors) of the app.
