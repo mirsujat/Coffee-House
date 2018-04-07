@@ -264,3 +264,25 @@ You can launch the app by double-clicking on the icon, as usual. You can also re
 ```
 $ ./gradlew uninstallAll
 ```
+
+This will remove the app from all connected devices.
+
+#### Publish a build scan
+
+Build scans are a persistent, shareable record of what happened when running a build. With build scans, you gain deep insights about your build.
+
+If you are using Gradle 4.3+, you can easily create a build scan by using the --scan command line option, e.g. gradle build --scan. For older Gradle versions, see the Build Scan Plugin User Manual on how to enable build scans.
+
+```
+./gradlew build --scan
+
+BUILD SUCCESSFUL in 1s
+4 actionable tasks: 4 executed
+
+Do you accept the Gradle Cloud Services license agreement (https://gradle.com/terms-of-service)? [yes, no]
+yes
+Gradle Cloud Services license agreement accepted.
+
+Publishing build scan...
+https://gradle.com/s/carzirlfjwjlo
+```
