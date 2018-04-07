@@ -1,0 +1,3 @@
+Android projects are Gradle multi-project builds, with a top-level build.gradle file and a subdirectory called app, with its own build.gradle file. The top-level build file is noted as (Project: HelloWorldGradle) in the figure, and the app build file has (Module: app) appended to it.
+
+There may be two files called gradle.properties. One is local to the project. The other, optional file of the same name exists only if you have a global gradle.properties file in the .gradle sub-directory of your home directory.
