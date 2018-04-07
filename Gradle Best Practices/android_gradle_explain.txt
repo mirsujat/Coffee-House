@@ -151,6 +151,50 @@ This will run many tasks and eventually return "Build Successful". To see the re
 
 From the terminal, you can also find out the version of the support-annotations module being used in the project. To do so, first run the dependencies task in the app project, asking for the details of the releaseCompileClasspath configuration only.
 
+```
+$ ./gradlew :app:dependencies --configuration releaseCompileClasspath
+:app:dependencies
+
+------------------------------------------------------------
+Project :app
+------------------------------------------------------------
+
+releaseCompileClasspath - Resolved configuration for compilation for variant: release
++--- com.android.support:appcompat-v7:26.1.0
+|    +--- com.android.support:support-annotations:26.1.0
+|    +--- com.android.support:support-v4:26.1.0
+|    |    +--- com.android.support:support-compat:26.1.0
+|    |    |    +--- com.android.support:support-annotations:26.1.0
+|    |    |    \--- android.arch.lifecycle:runtime:1.0.0
+|    |    |         +--- android.arch.lifecycle:common:1.0.0
+|    |    |         \--- android.arch.core:common:1.0.0
+|    |    +--- com.android.support:support-media-compat:26.1.0
+|    |    |    +--- com.android.support:support-annotations:26.1.0
+|    |    |    \--- com.android.support:support-compat:26.1.0 (*)
+|    |    +--- com.android.support:support-core-utils:26.1.0
+|    |    |    +--- com.android.support:support-annotations:26.1.0
+|    |    |    \--- com.android.support:support-compat:26.1.0 (*)
+|    |    +--- com.android.support:support-core-ui:26.1.0
+|    |    |    +--- com.android.support:support-annotations:26.1.0
+|    |    |    \--- com.android.support:support-compat:26.1.0 (*)
+|    |    \--- com.android.support:support-fragment:26.1.0
+|    |         +--- com.android.support:support-compat:26.1.0 (*)
+|    |         +--- com.android.support:support-core-ui:26.1.0 (*)
+|    |         \--- com.android.support:support-core-utils:26.1.0 (*)
+|    +--- com.android.support:support-vector-drawable:26.1.0
+|    |    +--- com.android.support:support-annotations:26.1.0
+|    |    \--- com.android.support:support-compat:26.1.0 (*)
+|    \--- com.android.support:animated-vector-drawable:26.1.0
+|         +--- com.android.support:support-vector-drawable:26.1.0 (*)
+|         \--- com.android.support:support-core-ui:26.1.0 (*)
+\--- com.android.support.constraint:constraint-layout:1.0.2
+     \--- com.android.support.constraint:constraint-layout-solver:1.0.2
+
+(*) - dependencies omitted (listed previously)
+
+
+BUILD SUCCESSFUL
+```
 
 
 
