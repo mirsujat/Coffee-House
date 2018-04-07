@@ -10,3 +10,10 @@ include ':app'
 This tells Gradle that the app sub-directory is also a Gradle project. If, at some later time, you were to add an Android Library to this project through the available wizard, another project sub-directory would be created and added to this file.
 
 The last file is called gradle-wrapper.properties, which configures the so-called Gradle Wrapper. This allows you to build Android projects without having to install Gradle first. The contents of the file should be similar to:
+```
+distributionBase=GRADLE_USER_HOME
+distributionPath=wrapper/dists
+zipStoreBase=GRADLE_USER_HOME
+zipStorePath=wrapper/dists
+distributionUrl=https\://services.gradle.org/distributions/gradle-4.1-all.zip
+```
