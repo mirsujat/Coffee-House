@@ -138,3 +138,8 @@ Finally, there are three lines that add dependencies to the implementation confi
 * The first, fileTree(dir: 'libs', include: ['*.jar']), is a fileTree dependency that adds any jar files in the libs folder to the compile classpath
 * The second, com.android.support:appcompat-v7:26.1.0 adds the Android Compatibility library to the project. This allows you to use the Material design theme and other capabilities in any Android app as old as SDK version 7.
 * The third, com.android.support.constraint:constraint-layout:1.0.2 adds the Android Constraint Layout to the project. This allows you to use the ConstraintLayout layout class in any Android app as old as SDK version 9.
+
+Run standard Gradle tasks
+
+Android Studio makes it easy to build and deploy a debug version of an app through the IDE, but ultimately Gradle is still involved. To see this, open the Terminal window in Android Studio (or open an external command prompt and navigate to the root directory of your app). From there you can run the build task.
+
