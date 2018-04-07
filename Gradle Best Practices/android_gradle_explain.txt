@@ -236,6 +236,12 @@ com.android.support:support-annotations:26.1.0
 BUILD SUCCESSFUL
 ```
 
+Both the dependency and dependencyInsight tasks are available in any Gradle project. They can help you track down and resolve any issues with library version conflicts.
+
+Use the Gradle window
+
+Android Studio includes a special window for executing Gradle tasks. Android projects provide over 80 different tasks, and this window tries to organize them into categories.
+
 
 
 
