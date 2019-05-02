@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
+import "./bootstrap.min.css"
 import "./layout.css"
 
 const Layout = ({ children }) => (
