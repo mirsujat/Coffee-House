@@ -8,11 +8,7 @@ import BackgroundSection from "../components/Globals/BackgroundSection/Backgroun
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <BackgroundSection
-      img={data.img.childImageSharp.fluid}
-      title="Coffee House"
-      styleClass="default-background"
-    />
+    <BackgroundSection img={data.img.childImageSharp.fluid}  />
   </Layout>
 )
 
