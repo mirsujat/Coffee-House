@@ -19,7 +19,7 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: "muvnub4jgit",
+        spaceId: "imuvnub4jgit",
         // Learn about environment variables: https://gatsby.dev/env-vars
         accessToken: "t3SDWUhgdswUYZDfbREImu9Kq94Kx1X3gy2yoDjvd5k"
       }
