@@ -12,6 +12,11 @@ const Info = () => {
               quas esse quod delectus enim deleniti soluta molestias saepe. Est
               quos beatae debitis culpa ipsum tempora et in, ab animi nesciunt.
             </p>
+            <Link to="/about">
+              <button className="btn text-uppercase btn-yellow">
+                about page
+              </button>
+            </Link>
           </div>
         </div>
       </div>
