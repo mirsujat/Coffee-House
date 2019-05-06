@@ -7,8 +7,10 @@
 <h1 align="center">
   Gatsby Coffee-House
 </h1>
-## 💫 See Live Demo
-(https://cofffeehouse.netlify.com/)
+
+## 💫 See Live Demo [!(https://cofffeehouse.netlify.com/)]
+
+-
 
 Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
@@ -92,7 +94,7 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 - **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
-## 💫 See Live Demo
+##  💫 See Live Demo
 (https://cofffeehouse.netlify.com/)
 
 
