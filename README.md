@@ -10,7 +10,17 @@
 
 ## 💫 See Live Demo https://cofffeehouse.netlify.com/
 
--
+# Technology used 
+- Gatsby
+- React
+- GraphQl
+- FormSpree
+- ContentFul
+- Snipcart E-commerce Solution
+- netlify
+- and html, css, javascript
+
+## This is a learning project you are free to use this source code.
 
 Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
