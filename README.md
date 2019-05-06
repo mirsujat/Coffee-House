@@ -8,7 +8,7 @@
   Gatsby Coffee-House
 </h1>
 
-## 💫 See Live Demo [!(https://cofffeehouse.netlify.com/)]
+## 💫 See Live Demo https://cofffeehouse.netlify.com/
 
 -
 
