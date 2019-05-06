@@ -7,6 +7,8 @@
 <h1 align="center">
   Gatsby Coffee-House
 </h1>
+## 💫 See Live Demo
+(https://cofffeehouse.netlify.com/)
 
 Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
@@ -93,6 +95,14 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 ## 💫 See Live Demo
 (https://cofffeehouse.netlify.com/)
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+
+
+<h1 align="center">
+  Thanks
+ <h1>
+ <h6 align="center">
+   Mir Sujat
+ </h6>
+
 
 <!-- AUTO-GENERATED-CONTENT:END -->
