@@ -4,6 +4,7 @@ import Hero from "../components/Hero/Hero";
 import Banner from "../components/Banner/Banner";
 import Services from "../components/Services/Services";
 import FeaturedRooms from "../components/FeaturedRooms/FeaturedRooms";
+import StyledHero from "../components/StyledHero/StyledHero";
 
 const Home = () => (
   <>
@@ -16,6 +17,7 @@ const Home = () => (
     </Hero>
     <Services />
     <FeaturedRooms />
+    <StyledHero>Hello</StyledHero>
   </>
 );
 
