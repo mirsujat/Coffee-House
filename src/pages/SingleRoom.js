@@ -16,12 +16,36 @@ class SingleRoom extends Component {
     const { getRoom } = this.context;
     const room = getRoom(this.state.slug);
     console.log(room);
-
+    if (!room) {
+      return (
+        <div className="error">
+          <h3>no such room could be found...</h3>
+          <Link to="/" className="btn-primary">
+            back to rooms
+          </Link>
+        </div>
+      );
+    }
+    const {
+      name,
+      description,
+      capacity,
+      size,
+      price,
+      extras,
+      breakfast,
+      pets,
+      images
+    } = room;
     return (
       <div>
-        <h1>Hello From Single Room</h1>
-        <Hero />
-        <Banner />
+        <Hero hero="roomsHero">
+          <Banner title={`${name} room`}>
+            <Link to="/" className="btn-primary">
+              back to home
+            </Link>
+          </Banner>
+        </Hero>
       </div>
     );
   }
