@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const Room = ({ room }) => {
   const { name, slug, images, price } = room;
@@ -19,4 +20,14 @@ const Room = ({ room }) => {
     </article>
   );
 };
+
+Room.propTypes = {
+  room: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    slug: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    images: PropTypes.arrayOf(PropTypes.string).isRequired
+  })
+};
+
 export default Room;
