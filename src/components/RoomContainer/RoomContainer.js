@@ -10,11 +10,10 @@ const RoomContainer = ({ context }) => {
     return <Loading />;
   }
   return (
-    <div>
-      <h4>Hello From RoomContianer</h4>
+    <>
       <RoomFilter rooms={rooms} />
       <RoomList rooms={sortedRooms} />
-    </div>
+    </>
   );
 };
 
