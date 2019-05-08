@@ -17,7 +17,7 @@ const Home = () => (
     </Hero>
     <Services />
     <FeaturedRooms />
-    <StyledHero>Hello</StyledHero>
+    <StyledHero>Hello Form StyledHero</StyledHero>
   </>
 );
 
