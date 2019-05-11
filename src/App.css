@@ -311,6 +311,7 @@ h6 {
 }
 .img-container img {
   width: 100%;
+  height: 250px;
   display: block;
   transition: var(--mainTransition);
 }
@@ -512,3 +513,15 @@ h6 {
   }
 }
 /* end of rooms fitler*/
+.footer {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 0;
+  line-height: 2rem;
+  font-size: 0.68rem;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  background: var(--offWhite);
+  color: rgba(0, 0, 0, 0.84);
+  font-weight: 300;
+}

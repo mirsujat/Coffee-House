@@ -25,8 +25,10 @@ const RoomFilter = ({ rooms }) => {
 
   // get unique types
   let types = getUnique(rooms, "type");
+
   // add all
   types = ["all", ...types];
+
   // map to JSX
   types = types.map((item, i) => {
     return (
